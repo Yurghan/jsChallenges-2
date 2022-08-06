@@ -1,7 +1,12 @@
-// There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+// Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
 
-function remainder(x, y) {
-  return x % y;
-}
+const bitwiseAND = (a) => {
+  let sum = 0;
+  while (a) {
+    sum += a;
+    a--;
+  }
+  return sum;
+};
 
-console.log(getFirstValue([1, 2, 3, 4]));
+console.log(bitwiseAND(4));
