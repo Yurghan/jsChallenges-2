@@ -2,3 +2,7 @@
 // matchHouses(1) ➞ 6
 // matchHouses(4) ➞ 21
 // matchHouses(87) ➞ 436
+
+function matchHouses(step) {
+  return step ? step * 5 + 1 : 0;
+}
