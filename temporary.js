@@ -1,12 +1,9 @@
 // Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
 
-const bitwiseAND = (a) => {
-  let sum = 0;
-  while (a) {
-    sum += a;
-    a--;
-  }
-  return sum;
+const multiply = (arr) => {
+  return (multiplier) => {
+    return arr.map((el) => el * multiplier);
+  };
 };
 
-console.log(bitwiseAND(4));
+console.log(multiply([1, 2, 3])(2));
