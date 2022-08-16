@@ -1,3 +1,3 @@
-const shiftToLeft = (x, y) => x * Math.pow(2, y);
+const minMax = (arr) => {};
 
-console.log(shiftToLeft(10, 3));
+console.log(minMax([1, 2, 3, 4, 5]));
