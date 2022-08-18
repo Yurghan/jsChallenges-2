@@ -1,3 +1,3 @@
-const possibleBonus = (a, b) => (a >= b ? false : a + 6 >= b);
+const shiftToRight = (a, b) => Math.floor(a / Math.pow(2, b));
 
-console.log(possibleBonus(1, 9));
+console.log(shiftToRight(-512, 10));
