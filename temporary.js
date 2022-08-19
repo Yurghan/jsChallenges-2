@@ -1,3 +1,5 @@
-const num_of_digits = (num) => num.toString().length;
+const addName = (obj, name, value) => {
+  return { ...obj, [name]: value };
+};
 
-console.log(num_of_digits(1305981031));
+console.log(addName({ piano: 500 }, 'Brutus', 400));
