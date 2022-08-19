@@ -1,3 +1,3 @@
-const perimeter = (l, num) => (l === 's' ? 4 * num : 2 * Math.PI * num);
+const num_of_digits = (num) => num.toString().length;
 
-console.log(perimeter('c', 9));
+console.log(num_of_digits(1305981031));
