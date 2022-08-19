@@ -1,3 +1,3 @@
-const shiftToRight = (a, b) => Math.floor(a / Math.pow(2, b));
+const perimeter = (l, num) => (l === 's' ? 4 * num : 2 * Math.PI * num);
 
-console.log(shiftToRight(-512, 10));
+console.log(perimeter('c', 9));
