@@ -1,5 +1,13 @@
-const addName = (obj, name, value) => {
-  return { ...obj, [name]: value };
+const generation = (x, y) => {
+  const template = [
+    ['great grandfather', 'grandfather', 'father', 'me!', 'son', 'grandson', 'great grandson'],
+    ['great grandmother', 'grandmother', 'mother', 'me!', 'daughter', 'granddaughter', 'great granddaughter'],
+  ];
+
+  const index1 = y === 'm' ? 0 : 1;
+  const index2 = x + 3;
+
+  return template[index1][index2];
 };
 
-console.log(addName({ piano: 500 }, 'Brutus', 400));
+console.log(generation(1, 'f'));
