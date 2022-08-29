@@ -1,13 +1,5 @@
-const generation = (x, y) => {
-  const template = [
-    ['great grandfather', 'grandfather', 'father', 'me!', 'son', 'grandson', 'great grandson'],
-    ['great grandmother', 'grandmother', 'mother', 'me!', 'daughter', 'granddaughter', 'great granddaughter'],
-  ];
+function tetra(n) {
+  return (n * (n + 1) * (n + 2)) / 6;
+}
 
-  const index1 = y === 'm' ? 0 : 1;
-  const index2 = x + 3;
-
-  return template[index1][index2];
-};
-
-console.log(generation(1, 'f'));
+console.log(tetra(4));
